@@ -10,3 +10,9 @@ favorite_languages = {
 
 language = favorite_languages['sarah'].title()
 print(f'Sarah\'s favorite language is {language}.')
+
+alien_0 = {
+    'colors': 'green',
+    'speed': 'slow'
+}
+
