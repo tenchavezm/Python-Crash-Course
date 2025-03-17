@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flask Web App</title>
+</head>
+<body>
+    <h1>Welcome! Please enter your details</h1>
+    <form method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="food">Favorite Food:</label>
+        <input type="text" id="food" name="food" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if first_name and food %}
+    <p>Hello, {{ first_name }}! Your favorite food is {{ food }}.</p>
+    {% endif %}
+</body>
+</html>
